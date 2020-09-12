@@ -23,7 +23,7 @@ print(numbers[1])
 import random
 
 number = random.randint(1, 20)
-print(number)
+#print(number)
 num = True
 print('Давай поиграем')
 print('Угадай число)')
