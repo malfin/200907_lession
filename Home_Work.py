@@ -20,10 +20,26 @@ numbers = [1, 2, 3, 4, 5]
 print(numbers[1])
 
 # While - выполняет одно и тоже действие, пока оно не станет инстенным (true)
-i = 1
-while i < 6:
-    print(i)
-    i += 1
+import random
+
+number = random.randint(1, 20)
+print(number)
+num = True
+print('Давай поиграем')
+print('Угадай число)')
+for i in range(99999):
+    user = int(input('Введи число:'))
+    num = False
+    if user == int(number):
+        print('Вы угадали число!')
+        print('Спасибо за игру!')
+        exit()
+    elif user > number:
+        print('Число:', user, 'больше загаданного!')
+    else:
+        print('Число:', user, 'меньше загаданного!')
+exit()
+
 # For - цикл с параметарми
 for i in 1, 2, 3, 'one', 'two', 'three':
     print(i)
